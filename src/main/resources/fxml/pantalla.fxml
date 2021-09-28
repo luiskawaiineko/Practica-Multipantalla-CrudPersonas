@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="592.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Pantalla">
+   <children>
+      <Label layoutX="28.0" layoutY="53.0" prefHeight="17.0" prefWidth="37.0" text="Sexo:" />
+      <ComboBox layoutX="65.0" layoutY="49.0" prefWidth="150.0" />
+      <TextField layoutX="394.0" layoutY="36.0" promptText="nombre" />
+      <TextField layoutX="394.0" layoutY="68.0" promptText="edad" />
+      <RadioButton layoutX="394.0" layoutY="119.0" mnemonicParsing="false" text="Hombre" />
+      <RadioButton layoutX="491.0" layoutY="119.0" mnemonicParsing="false" text="Mujer" />
+      <DatePicker layoutX="394.0" layoutY="162.0" prefHeight="25.0" prefWidth="149.0" promptText="Fecha de registro" />
+      <Button layoutX="394.0" layoutY="205.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="Add" />
+      <Button layoutX="459.0" layoutY="205.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Update" />
+      <ListView layoutX="35.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView layoutX="353.0" layoutY="342.0" prefHeight="162.0" prefWidth="200.0" />
+      <Button layoutX="248.0" layoutY="342.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="93.0" text="🡆" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font></Button>
+      <Button layoutX="248.0" layoutY="453.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="93.0" text="🡄" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Label layoutX="35.0" layoutY="285.0" prefHeight="37.0" prefWidth="200.0" text="Se cargan en el list según el combo" textAlignment="JUSTIFY" wrapText="true" />
+      <Label layoutX="352.0" layoutY="285.0" prefHeight="37.0" prefWidth="200.0" text="Al seleccionar persona, se ponen sus datos en las cajas" textAlignment="JUSTIFY" wrapText="true" />
+      <Button layoutX="353.0" layoutY="517.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="dell seleccionado" />
+   </children>
+</AnchorPane>
