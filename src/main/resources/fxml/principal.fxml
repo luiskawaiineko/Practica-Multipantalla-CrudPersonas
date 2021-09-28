@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane fx:id="root" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Principal">
-   <center>
-      <Button fx:id="boton" mnemonicParsing="false" text="Button" onAction="#click" BorderPane.alignment="CENTER" />
-   </center>
+<BorderPane fx:id="root" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Principal">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Programa">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Menú principal" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Persona">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Añadir persona" />
+                  <MenuItem mnemonicParsing="false" text="Ver listado personas" />
+                  <MenuItem mnemonicParsing="false" text="Actualizar persona" />
+                  <MenuItem mnemonicParsing="false" text="Eliminar persona" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>
